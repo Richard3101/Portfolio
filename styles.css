@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+body{
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+
+p{
+    line-height: 2.5;
+    letter-spacing: 0.05rem;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.hero__universe{
+    display: flex;
+    justify-content: center;
+}
+
+.hero__sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+    margin: 100px;
+    
+}
+
+.hero__sun--pink{
+    font-size: 2rem;
+    box-shadow: 0 0 15px hotpink, 0 0 20px hotpink, 0 0 40px hotpink, 0 0 55px hotpink;
+}
+
+.hero__planet{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.hero__planet--5s{
+    transform-origin: 50px 200px;
+    animation: rotation 5s linear infinite;
+    box-shadow: 0 0 10px rgb(175, 99, 247), 0 0 25px rgb(175, 99, 247), 0 0 45px rgb(175, 99, 247);
+}
+.hero__planet--15s{
+    transform-origin: 50px 200px;
+    animation: rotation 15s linear infinite;
+    box-shadow: 0 0 10px blue, 0 0 25px blue, 0 0 45px blue;
+}
+.hero__planet--7s{
+    transform-origin: 50px 200px;
+    animation: rotation 7s linear infinite;
+    box-shadow: 0 0 10px rgb(0, 247, 255), 0 0 25px rgb(0, 247, 255), 0 0 45px rgb(0, 247, 255);
+}
+.hero__planet--21s{
+    transform-origin: 50px 200px;
+    animation: rotation 21s linear infinite;
+    box-shadow: 0 0 10px rgb(0, 255, 0), 0 0 25px rgb(0, 255, 0), 0 0 45px rgb(0, 255, 0);
+}
+
+@keyframes rotation{
+    from{
+        tranform: rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.hero__cartel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.hero__title{
+    text-align: center;
+}
+
+.hero__name{
+    font-family: 'Castoro', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.6rem;
+}
+
+.hero__h2{
+    font-size: 1.9rem;
+    text-shadow: 0 0 5px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 30px #ff66cc;
+    animation: parpadear 1s infinite backwards steps(2);
+}
+
+@keyframes parpadear{
+    to{
+        color: gray;
+        text-shadow: none;
+    }
+}
+
+.aboutMe__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe__information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.aboutMe__name, .aboutMe__job{
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.aboutMe__description{
+    margin: 0;
+}
+
+.aboutMe__imgContainer{
+    width: 270px;
+    height: 330px;
+    padding-bottom: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.aboutMe__img{
+    width: 250px;
+    height: 300px;
+    align-items: center;
+}
+
+.aboutMe__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe__icons{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.aboutMe__training{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe__education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutMe__eduTitle{
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.aboutMe__eduDate{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.aboutMe__career{
+    margin: 10px 0 0 0;
+    border: 1.5px solid white;
+}
+
+.aboutMe__skill{
+    width: 64px;
+    height: 64px;
+}
+
+.aboutMe__interest{
+    width: 64px;
+    height: 64px;
+}
