@@ -236,7 +236,7 @@ p{
 .projects__div{
     width: auto;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .projects__divImg{
@@ -298,4 +298,149 @@ p{
     width: 60%;
     align-self: center;
     border-radius: 20px;
+}
+
+/* Contenido para tablet SM  */
+
+@media (min-width: 640px){
+    main{
+        padding: 4%;
+    }
+    main div{
+        padding: 0px 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:769px){
+    /* Contenido para tablet MD */
+    /* A partir de 769px se aplican estos estilos */
+
+
+    /* estilos al about me  */
+    .aboutMe__information{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+
+        grid-template-areas:
+                     "imagen descripcion"
+                     "imagen descripcion"
+                     "redes redes";
+    }
+
+    .aboutMe__imgContainer{
+        grid-area: imagen;
+    }
+
+    .aboutMe__me{
+        grid-area: descripcion;
+    }
+
+    .aboutMe__redes{
+        grid-area: redes;
+    }
+
+
+    /* estilos a mi capacitación  */
+    .aboutMe__training{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+
+        grid-template-areas:
+                     "educacion educacion"
+                     "skills interest";
+    }
+
+    .aboutMe__education{
+        grid-area: educacion;
+    }
+
+    .aboutMe__skills{
+        grid-area: skills;
+    }
+
+    .aboutMe__interests{
+        grid-area: interest;
+    }
+
+    /* estilos a los proyectos  */
+
+    .projects__divImgGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas: 
+                    "imagen1 imagen1"
+                    "imagen1 imagen1"
+                    "imagen2 imagen3";
+        justify-items: center;
+    }
+
+    .projects__cardsimg--1{
+        grid-area: imagen1;
+    }
+
+    .projects__cardsimg--2{
+        grid-area: imagen2;
+    }
+
+    .projects__cardsimg--3{
+        grid-area: imagen3;
+    }
+}
+
+@media (min-width: 1281px){
+    .aboutMe__training{
+        column-gap: 250px;
+        justify-items: center;
+    }
+
+    .projects__divImgGrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* estilo de float a los iconos  */
+
+
+    .aboutMe__icon{
+        display: inline-block;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    .aboutMe__icon--twitter{
+        animation-delay: 1s;
+    }
+    .aboutMe__icon--insta{
+        animation-delay: 1.5s;
+    }
+    .aboutMe__icon--link{
+        animation-delay: 2s;
+    }
+    .aboutMe__icon--git{
+        animation-delay: 2.5s;
+    }
+
+    @keyframes float {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    /* estilo al boton de contacto  */
+
+    .form__button:hover{
+        cursor: pointer;
+        background-color: #f5b9e0;
+        color: rgb(52, 52, 209);
+    }
 }

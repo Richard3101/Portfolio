@@ -36,18 +36,22 @@
                     <img src="./Imagenes/Yo.jpg" alt="Yo" class="aboutMe__img">
                 </div>
 
-                <h1 class="aboutMe__name">RICARDO TAPIA</h1>
-                <p class="aboutMe__job">/Programador Web</p>
-                <p class="aboutMe__description">Hola si, me llamo Ricardo (Richard para los amigos). Tengo 26 años, soy argentino y soy estudiante de la Tecnicatura en Programación e Informática en la Universidad Nacional de Quilmes. También soy autodidacta ya que realicé cursos gratuitos de desarrollo por internet. Tengo conocimientos en HTML, CSS y JavaScript. Quiero seguir fortaleciendo mis conocimientos en Frontend y a futuro llegar a ser Full stack developer.</p>
+                <div class="aboutMe__me">
+
+                    <h1 class="aboutMe__name">RICARDO TAPIA</h1>
+                    <p class="aboutMe__job">/Programador Web</p>
+                    <p class="aboutMe__description">Hola si, me llamo Ricardo (Richard para los amigos). Tengo 26 años, soy argentino y soy estudiante de la Tecnicatura en Programación e Informática en la Universidad Nacional de Quilmes. También soy autodidacta ya que realicé cursos gratuitos de desarrollo por internet. Tengo conocimientos en HTML, CSS y JavaScript. Quiero seguir fortaleciendo mis conocimientos en Frontend y a futuro llegar a ser Full stack developer.</p>
+                    
+                </div>
 
                 <div class="aboutMe__redes">
                     <h3 class="aboutMe__redesTitle">Encontrame en:</h3>
                     <div class="aboutMe__icons">
-                        <a href="" ><img src="./Imagenes/iconos/icons8-facebook-64.png" alt="Facebook icon" class="aboutMe__icon"></a>
-                        <a href="" ><img src="./Imagenes/iconos/icons8-twitter-64.png" alt="Twitter icon" class="aboutMe__icon"></a>
-                        <a href="" ><img src="./Imagenes/iconos/icons8-instagram-64.png" alt="Instagram icon" class="aboutMe__icon"></a>
-                        <a href="" ><img src="./Imagenes/iconos/icons8-linkedin-64.png" alt="Linkedin icon" class="aboutMe__icon"></a>
-                        <a href="" ><img src="./Imagenes/iconos/icons8-github-64.png" alt="Github icon" class="aboutMe__icon"></a>
+                        <a href="https://www.facebook.com/richard.tapia.10" target="_blank"><img src="./Imagenes/iconos/icons8-facebook-64.png" alt="Facebook icon" class="aboutMe__icon aboutMe__icon--face" ></a>
+                        <a href="https://twitter.com/richardrnr169" target="_blank"><img src="./Imagenes/iconos/icons8-twitter-64.png" alt="Twitter icon" class="aboutMe__icon aboutMe__icon--twitter" ></a>
+                        <a href="https://www.instagram.com/richrintillo/" target="_blank"><img src="./Imagenes/iconos/icons8-instagram-64.png" alt="Instagram icon" class="aboutMe__icon aboutMe__icon--insta"></a>
+                        <a href="https://www.linkedin.com/in/ricardo-tapia-0734a921a/" target="_blank"><img src="./Imagenes/iconos/icons8-linkedin-64.png" alt="Linkedin icon" class="aboutMe__icon aboutMe__icon--link"></a>
+                        <a href="https://github.com/Richard3101" target="_blank"><img src="./Imagenes/iconos/icons8-github-64.png" alt="Github icon" class="aboutMe__icon aboutMe__icon--git"></a>
                     </div>
                 </div>
             </div>
@@ -92,11 +96,11 @@
 
                     
                     <p>Este fue el primer proyecto que realicé. La idea era hacer unas cards de una pagina de Ecommerce. Elegí hacer de una pagina de venta de zapatillas, es muy simple porque no conocía tanto sobre css. Lo único interesante son los hover en los botones. Link a la pagina: <a href="https://richard3101.github.io/Proyecto-Frontend-Fundamentals/">Tienda de Zapatillas</a></p>
-                    <div class="projects__divImg">
+                    <div class="projects__divImg projects__divImgGrid">
                         
-                        <img src="./Imagenes/cards/Card.PNG" alt="" class="projects__cardsImg">
-                        <img src="./Imagenes/cards/Especificaciones.PNG" alt="" class="projects__cardsImg">
-                        <img src="./Imagenes/cards/Especificaciones-Hover.PNG" alt="" class="projects__cardsImg">
+                        <img src="./Imagenes/cards/Card.PNG" alt="" class="projects__cardsImg projects__cardsimg--1">
+                        <img src="./Imagenes/cards/Especificaciones.PNG" alt="" class="projects__cardsImg projects__cardsimg--2">
+                        <img src="./Imagenes/cards/Especificaciones-Hover.PNG" alt="" class="projects__cardsImg projects__cardsimg--3">
                     </div>
                 </div>
             </div>
@@ -121,8 +125,7 @@
             <form class="form" id="contacto" action="https://formspree.io/f/xyyonzrz" method="post">
                 <input class="form__input" name="nombre" type="text" placeholder="Nombre...">
                 <input class="form__input" name="email" type="email" placeholder="Email...">
-                <label for="asunto">Asunto:</label>
-                <input class="form__input" id="asunto" name="asunto" type="text" placeholder="Consulta proyecto">
+                <input class="form__input" id="asunto" name="asunto" type="text" placeholder="Asunto...">
                 <input class="form__input" name="mensaje" type="text" placeholder="Mensaje..." >
         
                
